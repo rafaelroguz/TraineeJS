@@ -1,0 +1,31 @@
+body {
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  width: 60rem;
+}
+
+.InfoSection {
+  background-color: white;
+  padding: 16px;
+}
+
+.Interactive {
+  margin: 24px auto;
+  text-align: center;
+}
+
+.List {
+  margin: 24px;
+}
+
+.ListItem {
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  margin: 12px auto;
+  padding: 8px;
+}
+
+.ListItem:hover {
+  cursor: pointer;
+}
