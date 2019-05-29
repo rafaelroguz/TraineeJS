@@ -6,7 +6,7 @@ import { InteractiveSection } from "./InteractiveSection";
 export class Main extends Component {
   state = {
     people: [],
-    selectedItem: {}
+    selectedItem: null
   };
 
   componentDidMount = () => {
