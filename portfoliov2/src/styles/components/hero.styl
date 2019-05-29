@@ -1,0 +1,34 @@
+@require "../base/colors"
+@require "../base/units"
+
+.hero
+    background-image: url("../images/arrow_background.png") 
+    background-repeat: no-repeat
+    background-size: 100% 45vw
+    box-sizing: border-box
+    padding: $normal_padding 0 $double_padding 0
+
+    &__container
+        text-align: center
+    
+    &__name
+        color: $text_white
+        margin: $normal_margin 0 $normal_margin 0
+
+    &__title
+        color: $text_white
+        margin: 0 0 $double_margin 0 
+
+    &__picture
+        background-color: $background_white
+        border-radius: 0.3rem
+        box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75)
+        margin: auto auto
+        height 5rem
+        width: 5rem
+
+    &__bio
+        color: $text_gray_dark
+        text-align: justify
+        padding: 0 $normal_padding
+        

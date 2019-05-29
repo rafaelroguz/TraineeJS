@@ -1,0 +1,55 @@
+@require "../base/colors"
+@require "../base/units"
+
+.projects
+    background-color: $background_white
+    box-sizing: border-box
+
+    &__container
+        box-sizing: border-box
+        padding: $normal_padding
+
+    &__title
+        color: $text_blue_dark
+        text-align: center
+        margin: $half_margin 0 $double_margin 0
+
+    &__card
+        background-color: $background_white
+        border-radius: 0.3rem
+        box-sizing: border-box
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75)
+        margin: 0 0 $double_margin 0
+        width: 100%
+
+        &__title
+            background-color: $background_blue_dark
+            color: $text_white
+            padding: 0.1rem $normal_padding
+            text-align: left 
+
+        &__image
+            background-image: url("./images/work.png")
+            background-size: cover
+            background-repeat: no-repeat
+            box-sizing: border-box
+            width: 100%
+            height 50%vw
+
+        &__description
+            padding: $normal_padding
+
+            &__text
+                color: $text_gray_dark
+
+        &__button
+            text-align: center
+            font-weight: bold
+
+            &__content
+                background-color: #0067CE
+                border: none
+                border-radius: 0.3rem
+                color: $text_white
+                margin: 0 auto $double_margin auto
+                padding: $half_padding $double_padding

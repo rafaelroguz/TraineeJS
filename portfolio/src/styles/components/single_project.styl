@@ -1,0 +1,49 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+
+.single__project
+    background-color: $background_gray
+    font-family: $text_font
+
+    &:first-child
+        margin-bottom: $normal_margin
+
+    &:nth-child(2)
+        margin-bottom: $normal_margin
+
+    &__container
+        box-sizing: border-box
+        padding: $normal_padding
+        width: 100%
+        color: $text_color
+
+    &__button
+        width: 100%
+        background-color: $button_color
+        padding: $normal_padding
+        color: $text_white
+        border: none
+        padding: $half_padding 0
+
+        &__text
+            margin: 0 !important
+            padding 0
+
+        &:hover
+            cursor pointer
+
+    &__all
+        margin: 0
+        
+@media screen and (min-width $tablet_width)
+    .single__project
+        display inline-block
+        margin: 0 $normal_margin 0 $normal_margin
+
+        &:last-child
+            margin-bottom: $normal_margin
+
+        &__all
+            justify-content: space-evenly
+            display: flex
+            padding-bottom: $normal_padding          

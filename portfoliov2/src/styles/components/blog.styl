@@ -1,0 +1,33 @@
+@require "../base/colors"
+@require "../base/units"
+
+.blog
+    &__container
+        background-color: $background_white
+    
+    &__title
+        background-color: $background_gray_light
+        color: $text_blue_dark
+        padding: $normal_padding
+        text-align: center
+
+    &__content
+        padding: $normal_padding
+        text-align: center
+
+        &__title
+            color: $text_blue_dark
+            margin: 0
+
+        &__published
+            color: $text_blue_dark
+            margin-bottom: $double_margin
+
+        &__button
+            background-color: $button_blue
+            border: none
+            border-radius: 0.3rem
+            color: $text_white
+            font-weight: bold
+            margin-bottom: $normal_margin
+            padding: $half_padding $double_padding

@@ -1,0 +1,57 @@
+@require "../base/colors"
+@require "../base/units"
+
+.experience
+    background-color: $background_gray_light
+    box-sizing: border-box
+
+    &__container
+        padding: $normal_padding  
+
+    &__title
+        color: $text_blue_dark
+        text-align: center
+
+    &__card
+        background-color: $background_white
+        border-radius: 0.3rem
+        box-sizing: border-box
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75)
+        display inline-block
+        margin: 0 0 $double_margin 0
+        padding: $normal_padding
+        width: 100%
+
+        &__picture
+            background-color: #FF3249
+            border-radius: 0.2rem
+            display: inline-block
+            height 5rem
+            width: 5rem
+            vertical-align: middle
+
+        &__text
+            display: inline-block
+            margin-left: $normal_margin
+            vertical-align: middle
+
+            :first-child
+                margin: 0
+                color: $text_blue_dark
+            :nth-child(2)
+                margin: $half_margin 0
+                color: $text_blue_dark
+            :nth-child(3)
+                margin: 0
+                color:$text_gray_dark
+
+        &__separator
+            border: solid 1px $border_blue_dark
+            margin: $normal_margin 0
+
+        &__job
+            color: $text_gray_dark
+            margin: 0 0 $normal_margin 0
+
+            &__description
+                color: $text_gray_dark

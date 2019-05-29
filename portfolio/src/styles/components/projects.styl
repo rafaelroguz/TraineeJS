@@ -1,0 +1,24 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+    
+.projects
+    background-color: $background_white
+    
+    &__container
+        box-sizing: border-box
+        margin: 0
+        padding: $double_padding $normal_padding
+        width: 100%
+
+    &__title
+        margin 0
+        padding: 0
+
+        &__text
+            color: $text_light_green
+            font-family: $text_font
+
+@media screen and (min-width $tablet_width)
+    .projects
+        &__title
+            text-align: center

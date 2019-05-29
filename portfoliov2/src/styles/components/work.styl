@@ -1,0 +1,49 @@
+@require "../base/colors"
+@require "../base/units"
+
+.work
+    background-color: $background_blue_dark
+    border-top: 0.5rem solid $border_green
+    border-bottom: 0.5rem solid $border_green
+    box-sizing: border-box
+
+    &__container
+        padding: $double_padding
+
+    &__icon
+        background-image: url("./images/handshake.svg")
+        margin: $normal_margin auto
+        height 5rem
+        width: 5rem
+
+    &__together
+        color: $text_white
+        padding: 0 $double_padding
+        text-align: center
+
+    &__message
+        color: $text_white
+        font-size: 1.2rem
+        margin-bottom: $double_margin
+        text-align: center
+
+    &__form
+        &__input
+        &__textarea
+            background-color: $background_blue_dark
+            border: 2px solid $border_white
+            border-radius: 0.2rem
+            color: $text_white
+            margin-bottom: $double_margin
+            padding: $normal_padding
+            width: 100%
+
+        &__button
+            text-align: center
+            
+            &__text
+                background-color: $button_blue
+                border: none
+                color: $text_white
+                font-weight: bold
+                padding: $half_padding $double_padding

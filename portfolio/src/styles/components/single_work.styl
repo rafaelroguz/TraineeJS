@@ -1,0 +1,58 @@
+@require "../base/colors.styl";
+@require "../base/fonts.styl";
+@require "../base/units.styl";
+
+.single__work
+    background-color: $background_white
+    font-family: $text_font
+
+    &__container
+        color $text_color
+        box-sizing border-box
+        border solid 2px $border_gray
+        padding $normal_padding
+
+        &:first-child
+            margin-bottom: $normal_margin
+
+        &:nth-child(2)
+            margin-bottom: $normal_margin
+
+    &__company
+        color $text_color
+        margin 0 0 $normal_margin 0
+
+    &__position
+        color $text_color
+        margin 0 0 $half_margin 0
+        font-size 1rem
+        font-weight normal
+
+    &__time
+        color $text_color
+        margin 0 0 $normal_margin 0
+        font-size 0.75rem
+
+    &__more
+        color $text_color
+        text-decoration none
+        color $text_light_green
+        display inline-block
+
+        &:hover
+            cursor pointer
+
+        &__text
+            margin 0
+    
+@media screen and (min-width: $tablet_width) 
+    .single__work
+        justify-content: space-evenly
+        display: flex
+
+        &__container
+            display inline-block
+            margin: 0
+            
+            &:last-child
+                margin-bottom: $normal_margin

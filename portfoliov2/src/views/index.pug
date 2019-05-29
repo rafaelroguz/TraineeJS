@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Portfolio
+        link(href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700", rel="stylesheet")
+        link(rel="stylesheet", href="vendor/normalize.css")
+        link(rel="stylesheet", href="vendor/bootstrap-grid.css")
+        link(rel="stylesheet", href="main.css")
+    body
+        div(class="container no-gutters")
+            include components/header.pug
+            include components/hero.pug
+            include components/experience.pug
+            include components/projects.pug
+            include components/blog.pug
+            include components/work.pug
+            include components/footer.pug
+        script(src="./js/app.js", async="true", defer="true")
